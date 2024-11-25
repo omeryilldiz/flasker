@@ -1,0 +1,14 @@
+<h1>Merhaba {{ name|striptags }}</h1>
+
+<p>Bu Benim İlk Web Sayfam!!</p>
+
+
+    {% for ders in dersler%}
+        {% if ders == 'Türkçe' %}
+            <p> {{ ders }} dersi var!!</p>
+        {% else%}
+            <p>{{ ders }}</p>
+        {% endif %}
+    {% endfor%}
+
+
